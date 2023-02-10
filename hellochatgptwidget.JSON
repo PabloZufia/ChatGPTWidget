@@ -1,0 +1,41 @@
+{
+	"name": "hellochatgptwidget",
+	"description": "Hello ChatGPT",
+	"newInstancePrefix": "hellochatgptwidget",
+	"eula": "",
+	"vendor": "PranavKandpal",
+	"license": "",
+	"id": "hellochatgptwidget",
+	"version": "1.0.1",
+	"icon": "",
+	"webcomponents": [
+		{
+			"kind": "main",
+			"tag": "chatgpt-widget",
+			"url": "https://kandpalpranav.github.io/ChatGPTWidget/Webcomponent.js",
+			"integrity": ""	,
+			"ignoreIntegrity": true
+			
+		}		
+	],
+	"properties": {
+		"prompt": {
+			"type": "string",
+			"default": "What is your name?"
+		},
+		"model": {
+			"type": "string",
+			"default": "text-davinci-002"
+		}
+	},
+	"methods": {
+		"ask": {
+			"description": "Ask ChatGPT a question."
+		}
+	},
+	"events": {
+		"onAnswer": {
+			"description": "Called when ChatGPT provides an answer."
+		}
+	}
+}
